@@ -1,0 +1,47 @@
+{
+  "name": "stacktrac",
+  "version": "1.4.1",
+  "description": "CLI SRE diagnostic tool: find the offending stack frame from a trace (file|string|url) and return probable cause and a StackOverflow search link.",
+  "bin": {
+    "stacktrac": "bin/stacktrac.js"
+  },
+  "main": "lib/parser.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "stacktrace",
+    "sre",
+    "cli",
+    "diagnostics",
+    "errors",
+    "troubleshooting"
+  ],
+  "author": "Kamal Hakim <kamal.hakim@aexp.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ovrdos/stacktrac.git"
+  },
+  "homepage": "https://github.com/ovrdos/stacktrac#readme",
+  "bugs": {
+    "url": "https://github.com/ovrdos/stacktrac/issues"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "authorNotes": "Open source project. MIT license.",
+  "dependencies": {
+    "commander": "^14.0.2"
+  }
+}
